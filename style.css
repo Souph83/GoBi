@@ -1,0 +1,51 @@
+body{
+background-color: lightblue;
+font.familiy: 'aral';
+}
+
+h1{
+text-align: center;
+color: darkblue;
+background-color: lightgreen;
+font-size: 40px;
+margin-bottom: -12px
+}
+
+h2{
+text-align: center;
+color: black;
+margin-bottom: -30px
+}
+
+h3{
+text-align: center;
+color: darkblue;
+font-size: 40px;
+background-color: lightgreen;
+margin-bottom: +10px
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table.center2, th, td {
+    margin-left:auto; 
+    margin-right:auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+p.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px
+}
+
+p.blocktext2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px
+}
+
