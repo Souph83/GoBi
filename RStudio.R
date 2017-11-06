@@ -47,4 +47,10 @@ boxplot(exons~vec, main="Distribution of the maximal number of skipped exons")
 
 allData<-rbind(gencode,HS3767,HS3775,HS3886,HS3890,Mus,Sc)
 
-allDataSorted<-allData[with(allData, order(-max_skipped_bases)), ]
+allDataSortedBases<-allData[with(allData, order(-max_skipped_bases)), ]
+topBases<-head(allDataSortedBases, n=100)
+write.table(topBases, "100topBases.out", quote=FALSE)
+
+allDataSortedExon<-allData[with(allData, order(-max_skipped_exon)), ]
+topExons<-head(allDataSortedExon, n=100)
+write.table(topExons, "100topExons.out", quote=FALSE)
